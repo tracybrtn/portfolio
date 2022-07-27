@@ -1,4 +1,25 @@
+.root {
+    --primary-color:var();
+    --secondary-color:var();
+    --tertiary-color:var();
+}
+
+@media screen and (min-width: 575px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 980px) {
+
+}
+
+
 /* .profile-picture {} */
+
+
 
 img {
     max-height: 400px;
