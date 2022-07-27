@@ -1,1 +1,6 @@
-/* .profile-picture {}
+/* .profile-picture {} */
+
+img {
+    max-height: 400px;
+    max-height: 400px;
+}
