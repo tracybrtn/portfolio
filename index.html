@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
     <title>@tracybrtn's portfolio</title>
   </head>
 
   <body>
     <header>
-        <h1>
-            <a href="/">Tracy Burton Bravo</a>
-        </h1>
-        <div class="profile-picture">
+        <div>
+            <h1>
+                <a href="/">Tracy Burton Bravo</a>
+            </h1>
             <img src="/assets/images/Avatar-Tracy.png" alt="Tracy Burton Bravo smiling in a portrait picture. ">
         </div>
-
         <nav>
             <ul>
                 <li>
@@ -32,43 +32,53 @@
                 </li>
             </ul>   
         </nav>
+    
     </header>
 
-    <section class="hero"></section>
+    <section class="hero">
+        <p>text on the hero</p>
+    </section>
     <!--Insert text on hero-->
 
-    <main>
-        <section id="about-me">
+    <main class="main-content">
+        <section id="about-me" class="section-flexbox">
+            <div>
             <h2>About Me</h2>
+            </div>
+            <div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit harum error, beatae labore obcaecati cum ex consectetur illum voluptatum dolor quod saepe eaque eveniet voluptatem quae architecto molestias, aliquid maxime.  
             </p>
+        </div>
+            </section>
         </section>
 
-        <section id="work">
+        <section id="work" class="section-flexbox">
             <h2>Work</h2>
             <!--images still need titles-->
-            <div>
-                <a href="https://tracybrtn.github.io/run-buddy/">
-                    <img src="assets/images/website-1-run-buddy.png" alt="Preview of the Run Buddy website" >
-                </a>
-            </div>
-            <div>
-                <a href="https://tracybrtn.github.io/horiseon/">
-                    <img src="assets/images/website-2-horiseon.jpeg" alt="Preview of the Horiseon website">
-                </a>    
-            </div>
-            <div>
-                <!--coming soon-->
-                <img src="assets/images/coming-soon-CC-image.jpg" alt="">
-            </div>
-            <div>
-                <img src="assets/images/coming-soon-CC-image.jpg" alt="">
-            </div>
-            <div>
-                <img src="assets/images/coming-soon-CC-image.jpg" alt="">
+            <div class="image-gallery">
+                <div class="big-image">
+                    <a href="https://tracybrtn.github.io/run-buddy/">
+                        <img src="assets/images/coming-soon-CC-image.jpg" alt="Preview of the Run Buddy website" class="">
+                    </a>
+                </div>
+                <div class="small-image">
+                    <a href="https://tracybrtn.github.io/horiseon/">
+                        <img src="assets/images/coming-soon-CC-image.jpg" alt="Preview of the Horiseon website">
+                    </a>
+                    <a href="">    
+                        <img src="assets/images/coming-soon-CC-image.jpg" alt="">
+                    </a>
+                    <a href=""> 
+                        <img src="assets/images/coming-soon-CC-image.jpg" alt="">
+                    </a>
+                    <a href=""> 
+                        <img src="assets/images/coming-soon-CC-image.jpg" alt="">
+                    </a> 
+                </div>
             </div>
         </section>
-        <section id="contact-me">
+
+        <section id="contact-me" class="section-flexbox">
             <h2>Contact Me</h2>
             <h3>
                 <a href="tel: +1916-349-5523">(916) 349-5523</a>
@@ -86,7 +96,8 @@
                 <a href="https://unpackingtracy.wordpress.com/" target="_blank">Blog</a>
             </h3>
         </section>
-        <section id="resume">
+
+        <section id="resume" class="section-flexbox">
             <h2>Resume</h2>
             <h3>
                 Open Tracy's Resume
