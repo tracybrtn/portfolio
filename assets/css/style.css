@@ -1,6 +1,121 @@
-/* .profile-picture {} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono';
+}
 
-img {
+/*PROVISIONAL STYLES*/
+
+
+
+/* HEADER*/ 
+header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    z-index: 9999
+}
+
+header h1 {
+    text-align: center;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
     max-height: 400px;
+    max-width: 400px;
+    height: 48px;
+    width: 48px;
+    padding-left: 10px;
+    text-align: center;
+}
+ 
+
+/*Nav*/
+header nav {
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+}
+
+/*HERO*/
+.hero {
+    background-image: url("../images/coming-soon-CC-image.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 200px;
+
+}
+
+/* MAIN*/
+
+.main-content {
+    background-color: white;
+    padding: 10px 50px;
+}
+
+section {
+    padding: 10px;
+}
+
+
+section h2 {
+    padding: 20px;
+}
+
+.section-flexbox {
+    display: flex;
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.big-image img {
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.small-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-image img {
+    max-width: 400px;
     max-height: 400px;
+}
+
+/* footer */
+
+footer {
+    background-color: aquamarine;
 }
