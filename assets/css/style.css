@@ -137,9 +137,9 @@ section p {
 .main-image {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
     
+    justify-content: center;
+    gap: 10px;   
 }
 
 .main-image img {
@@ -170,10 +170,39 @@ section p {
     border: 5px solid var(--tertiary-color);
 }
 
-.image-title {
+#main-image-caption {
     position: absolute;
+    max-width: 200px;
+    top: 670px;
+    background-color: var(--tertiary-color); 
+}
+
+#image1-caption{
+    position: absolute;
+    max-width: 150px;
+    top: 900px;
     background-color: var(--tertiary-color);
-    
+}
+
+#image2-caption{
+    position: absolute;
+    max-width: 150px;
+    top: 1110px;
+    background-color: var(--tertiary-color);
+}
+
+#image3-caption{
+    position: absolute;
+    max-width: 150px;
+    top: 1350px;
+    background-color: var(--tertiary-color);
+}
+
+#image4-caption{
+    position: absolute;
+    max-width: 150px;
+    top: 1620px;
+    background-color: var(--tertiary-color);
 }
 
 .contact-info h3 {
@@ -235,15 +264,51 @@ footer h4 {
         display: flex;
         flex-wrap: nowrap;
     }
+    
 }
+
 
 /*media queries for smaller laptops*/
 @media screen and (min-width: 769px) {
-
+ 
 }
 
 
 /*media queries for desktops*/
 @media screen and (min-width: 981px) {
+    #main-image-caption {
+        position: absolute;
+        max-width: 200px;
+        top: 750px;
+        background-color: var(--tertiary-color); 
+    }
+    
+    #image1-caption{
+        position: absolute;
+        max-width: 150px;
+        top: 1050px;
+        background-color: var(--tertiary-color);
+    }
+    
+    #image2-caption{
+        position: absolute;
+        max-width: 150px;
+        top: 1050px;
+        background-color: var(--tertiary-color);
+    }
+    
+    #image3-caption{
+        position: absolute;
+        max-width: 150px;
+        top: 1300px;
+        background-color: var(--tertiary-color);
+    }
+    
+    #image4-caption{
+        position: absolute;
+        max-width: 150px;
+        top: 1300px;
+        background-color: var(--tertiary-color);
+    }
     
 }
