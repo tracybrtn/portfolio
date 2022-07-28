@@ -16,7 +16,7 @@
 header {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: sticky;
@@ -51,7 +51,7 @@ header a {
 
 /*Nav*/
 header nav {
-    margin: auto;
+    margin: ;
 }
 
 header nav ul {
@@ -70,6 +70,7 @@ header nav ul li {
 header nav a {
     color: blue;
 }
+/*end of HEADER*/
 
 /*HERO*/
 .hero {
@@ -91,11 +92,10 @@ header nav a {
     top: 70%;
     left: 30%;
 }
-
+/*end of HERO*/
 
 
 /* MAIN*/
-
 .main-content {
     background-color: white;
     padding: 10px 10px;
@@ -106,17 +106,9 @@ section {
     scroll-margin-top: 5em;
 }
 
-
 section h2 {
     font-size: 20px;
     color: var(--secondary-color);
-}
-
-.section-title {
-    padding: 10px;
-    border-bottom: 2px solid;
-    border-color: var(--tertiary-color);
-
 }
 
 section p {
@@ -124,20 +116,32 @@ section p {
     padding: 10px;
 }
 
+.section-title {
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-color: var(--tertiary-color);
+    text-align: right;
+}
+
+
 .section-flexbox {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    align-items:flex-start;
 }
+
 
 .container {
     margin: 10px;
 }
 
+.gallery {
+    margin-bottom: 10px;
+}
+
 .main-image {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: center;
     gap: 10px;   
 }
@@ -205,16 +209,25 @@ section p {
     background-color: var(--tertiary-color);
 }
 
-.contact-info h3 {
-    display: inline;
+.section-text h3 {
     font-size: 15px;
+    margin: 10px;
 }
 
-.contact-info a {
+.section-text p {
+    color: black;
+}
+
+.section-text a {
     text-decoration: none;
     color: var(--tertiary-color);
-
 }
+
+#contact-me div {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
 /* footer */
 
 footer {
@@ -225,10 +238,6 @@ footer h4 {
     color: var(--primary-color);
 }
 
-/*media queries for phones*/
-@media screen and (min-width: 360px) {
-    
-}
 
 /*media queries for tablets*/
 @media screen and (min-width: 576px) {
@@ -259,56 +268,75 @@ footer h4 {
         background-color: white;
         padding: 10px 50px;
     }
-
-    .section-flexbox {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
 }
 
 
 /*media queries for smaller laptops*/
 @media screen and (min-width: 769px) {
+    header nav ul li {
+        font-size: 17px;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1 100%;
+    }
+    .section-flexbox {
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+
+    .section-title {
+        padding: 10px;
+        border-bottom: 0px;
+        border-right: 2px solid var(--tertiary-color); 
+    }
+
+    #image1-caption{
+        top: 900px;
+    }
+    
+    #image2-caption{
+        top: 1100px;
+    }
+    
+    #image3-caption{
+        top: 1350px;
+    }
+    
+    #image4-caption{
+        top: 1600px;
+    }
  
 }
 
 
 /*media queries for desktops*/
-@media screen and (min-width: 981px) {
-    #main-image-caption {
-        position: absolute;
-        max-width: 200px;
-        top: 750px;
-        background-color: var(--tertiary-color); 
+/*chose 938px to make sure image-captions do not break*/
+@media screen and (min-width: 938px) {
+    header nav ul li {
+        font-size: 30px;
     }
     
+    
     #image1-caption{
-        position: absolute;
-        max-width: 150px;
-        top: 1050px;
-        background-color: var(--tertiary-color);
+        top: 1150px;
     }
     
     #image2-caption{
-        position: absolute;
-        max-width: 150px;
-        top: 1050px;
-        background-color: var(--tertiary-color);
+        top: 1150px;
     }
     
     #image3-caption{
-        position: absolute;
-        max-width: 150px;
-        top: 1300px;
-        background-color: var(--tertiary-color);
+        top: 1150px;
     }
     
     #image4-caption{
-        position: absolute;
-        max-width: 150px;
-        top: 1300px;
-        background-color: var(--tertiary-color);
+        top: 1400px;
     }
-    
+}
+
+@media screen and (min-width: 1024px) {
+
 }
