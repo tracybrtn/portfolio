@@ -1,5 +1,5 @@
 # @tracybrtn's portfolio
-(picture)
+![Final version of website](https://github.com/tracybrtn/portfolio/blob/main/assets/images/live-1.0-webpage.jpeg)
 
 ## Purpose
 A website featuring @tracybrtn's coding portfolio to send to future and or possible employers
