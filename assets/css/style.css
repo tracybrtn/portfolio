@@ -130,46 +130,49 @@ section p {
     flex-wrap: wrap;
 }
 
+.container {
+    margin: 10px;
+}
+
+.main-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.main-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: 5px solid var(--tertiary-color);
+}
 
 .image-gallery {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    padding: 20px;
-    
-    
+    justify-content: space-around;
+    gap: 10px;
 }
 
-.big-image {
-    max-width: 300px;
-    max-height: 300px;
-    margin-bottom: 10px;
-    
+.image-gallery > li {
+    flex-basis: 350px;
+    list-style: none;
 }
 
-.big-image img {
+.image-gallery li img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    display: block;
+    vertical-align: middle;
     border: 5px solid var(--tertiary-color);
-    
-}
-
-.small-image {
-    display: flex;
-    justify-content: center;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.small-image img {
-    width: 100%;
-    height: 100%;
-    border: 3px solid var(--tertiary-color);
-  
 }
 
 .image-title {
+    position: absolute;
+    background-color: var(--tertiary-color);
     
 }
 
