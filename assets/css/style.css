@@ -132,33 +132,31 @@ section p {
 }
 
 .gallery {
-    margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
 }
 
-.main-image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;   
+.main-image-container {
+    border: 5px solid var(--tertiary-color);
+    flex-basis: 0 0 auto;
+  
 }
 
-.main-image img {
+.main-image-container img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    vertical-align: middle;
-    border: 5px solid var(--tertiary-color);
 }
 
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
 }
 
 .image-gallery > li {
-    flex-basis: 350px;
+    flex-basis: 250px;
     list-style: none;
 }
 
