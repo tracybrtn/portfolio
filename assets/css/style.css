@@ -50,7 +50,6 @@ header a {
     display: flex;
 }
 
-
 /*Nav*/
 header nav {
     margin: 8px;
@@ -94,7 +93,6 @@ header nav a {
 }
 /*end of HERO*/
 
-
 /* MAIN*/
 .main-content {
     background-color: white;
@@ -107,8 +105,8 @@ header nav a {
 
 /*make sure that href show the right portion of the page considering the sticky header*/
 section {
-    scroll-margin-top: calc(10em + 1vw);
-}  
+    scroll-margin-top: 10em;
+} 
 
 section h2 {
     font-size: calc(1.2em + 1vw);
@@ -237,72 +235,107 @@ footer h5 {
 
 /*media queries for tablets*/
 @media screen and (min-width: 576px) {
-    header {
-        padding: 10px 0 20px 0;
-    }
-
-    header img {
-        height: 60px;
-        width: 60x;
-        float: right;
-        padding-right: 0;
-    }
-
-   h1 {
-        padding: 10px 10px 10px 5px;
-    }
-
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-    }
 
     .main-content {
-        /* temporary background color change so that I know on the live preview when my vw is changing sizes"*/
         background-color: black;
         padding: 10px 50px;
     }
 
-    section {
-        scroll-margin-top: calc(11em + 1vw);
-    }  
+    #image1-caption{
+        top: 990px;
+    }
+    
+    #image2-caption{
+        top: 1190px;
+    }
+    
+    #image3-caption{
+        top: 1390px;
+    }
+    
+    #image4-caption{
+        top: 1690px;
+    }
 }
 
 
-/*media queries for smaller laptops*/
-@media screen and (min-width: 769px) {
-    header nav ul li {
-        font-size: 17px;
-    }
+/*media queries for smaller laptops starting when the gallery becomes two rows*/
+@media screen and (min-width: 820px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 10px 10px 0 5px;
+       }
+    
+       header nav ul {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        column-gap: 14px;   
+        }
+    
+        header nav a {
+        font-size: calc(1em + 1vw);
+        }
+
+
     .main-content {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         flex: 1 100%;
-        background-color: yellow;
+        background-color: white;
     }
+
+    section {
+        scroll-margin-top: calc(11em + 1vw);
+    }  
+
+    section h2 {
+        text-align: left;
+        border-bottom: 0px;
+        border-right: 2px solid var(--tertiary-color);
+        border-radius: 0%;
+        width: 100%;
+        margin: 0;
+    }
+    
     .section-flexbox {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
         flex-wrap: nowrap;
         text-align: left;
     }
 
+    /*Using REM to set a how space should be divided between flex containers*/
+
+    .flexbox-title {
+        flex-basis: 10rem;
+    }
+
+    .flexbox-div {
+        flex-basis: 50rem;
+    }
+
+
     #image1-caption{
-        top: 900px;
+        top: 1050px;
     }
     
     #image2-caption{
-        top: 1100px;
+        top: 1050px;
     }
     
     #image3-caption{
-        top: 1350px;
+        top: 1250px;
     }
     
     #image4-caption{
-        top: 1600px;
+        top: 1250px;
     }
  
 }
@@ -318,6 +351,7 @@ footer h5 {
     .main-content {
         background-color: blueviolet;
     }
+   
     #image1-caption{
         top: 1150px;
     }
