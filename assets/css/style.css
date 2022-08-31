@@ -2,6 +2,7 @@
         --primary-color: greenyellow;
         --secondary-color: blue;
         --tertiary-color: hotpink;
+        font-size: 14px;
     }
     
 * {
@@ -9,33 +10,32 @@
         margin: 0;
         padding: 0;
         font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+        height: auto;
+        width: auto;
     }
 
 /* GLOBAL Styles */
 /* HEADER*/ 
 header {
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     position: sticky;
     position: -webkit sticky; 
     top: 0;
     z-index: 9999;
+    padding: 0px 0 10px 0;
 }
 
 header img {
     height: 60px;
     width: 60x;
-    float: left;
-    padding-right: 5px;
 }
 
 header h1 {
+    font-size: calc(1.3em + 1vw);
     text-align: center;
-    display: inline;
-    font-size: 25px;
+    padding: 10px 5px 0px 10px;
+    height: 50%;
+    margin:auto;
 }
 
 header a {
@@ -45,30 +45,31 @@ header a {
  
 .title-avatar {
     background-color: var(--secondary-color);
-    height: 60px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
 }
 
 
 /*Nav*/
 header nav {
-    margin: ;
+    margin: 8px;
+    border: none;
 }
 
 header nav ul {
     list-style: none;
     padding: 5px 0;
-
-}
-
-header nav ul li {
-    padding: 10px 15px;
-    display: inline;
-    font-size: 12px;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 10px;   
 }
 
 header nav a {
-    color: blue;
+    color: var(--secondary-color);
+    font-size: calc(1em + 1vw);
+    text-decoration: underline;
 }
 /*end of HEADER*/
 
@@ -83,14 +84,13 @@ header nav a {
     background-attachment: fixed;
     background-position: 80%;
     height: 200px;
-
 }
 
 .hero p {
     background-color: var(--tertiary-color);
     position: relative;
     top: 70%;
-    left: 30%;
+    left: 26%;
 }
 /*end of HERO*/
 
@@ -98,41 +98,39 @@ header nav a {
 /* MAIN*/
 .main-content {
     background-color: white;
-    padding: 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
 }
 
+/*make sure that href show the right portion of the page considering the sticky header*/
 section {
-    padding: 10px;
-    scroll-margin-top: 5em;
-}
+    scroll-margin-top: calc(10em + 1vw);
+}  
 
 section h2 {
-    font-size: 20px;
+    font-size: calc(1.2em + 1vw);
     color: var(--secondary-color);
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-color: var(--tertiary-color);
+    border-radius: 5%;
+    width: 50%;
+    margin: 0 auto 5px auto;
 }
 
 section p {
-    font-size: 14px;
-    padding: 10px;
+    font-size: calc(.9em + 1vw);
 }
-
-.section-title {
-    padding: 10px;
-    border-bottom: 2px solid;
-    border-color: var(--tertiary-color);
-    text-align: right;
-}
-
 
 .section-flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
-}
-
-
-.container {
-    margin: 10px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
 }
 
 .gallery {
@@ -176,66 +174,64 @@ section p {
 
 #main-image-caption {
     position: absolute;
-    max-width: 200px;
+    max-width: fit-content;
+    max-height: fit-content;
     top: 670px;
     background-color: var(--tertiary-color); 
 }
 
 #image1-caption{
     position: absolute;
-    max-width: 150px;
+    max-width: fit-content;
+    max-height: fit-content;
     top: 900px;
     background-color: var(--tertiary-color);
 }
 
 #image2-caption{
     position: absolute;
-    max-width: 150px;
+    max-width: fit-content;
+    max-height: fit-content;
     top: 1110px;
     background-color: var(--tertiary-color);
 }
 
 #image3-caption{
     position: absolute;
-    max-width: 150px;
+    max-width: fit-content;
+    max-height: fit-content;
     top: 1350px;
     background-color: var(--tertiary-color);
 }
 
 #image4-caption{
     position: absolute;
-    max-width: 150px;
+    max-width: fit-content;
+    max-height: fit-content;
     top: 1620px;
     background-color: var(--tertiary-color);
 }
 
-.section-text h3 {
+#contact-me h3 {
     font-size: 15px;
     margin: 10px;
 }
 
-.section-text p {
-    color: black;
-}
-
-.section-text a {
+#contact-me a {
     text-decoration: none;
-    color: var(--tertiary-color);
-}
-
-#contact-me div {
-    display: flex;
-    flex-wrap: wrap; 
+    color: var(--secondary-color);
 }
 
 /* footer */
 
 footer {
     background-color: var(--secondary-color);
+    padding: 10px;
 }
 
-footer h4 {
+footer h5 {
     color: var(--primary-color);
+    text-align: center;
 }
 
 
@@ -252,7 +248,7 @@ footer h4 {
         padding-right: 0;
     }
 
-    header h1 {
+   h1 {
         padding: 10px 10px 10px 5px;
     }
 
@@ -265,9 +261,14 @@ footer h4 {
     }
 
     .main-content {
-        background-color: white;
+        /* temporary background color change so that I know on the live preview when my vw is changing sizes"*/
+        background-color: black;
         padding: 10px 50px;
     }
+
+    section {
+        scroll-margin-top: calc(11em + 1vw);
+    }  
 }
 
 
@@ -281,16 +282,11 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-start;
         flex: 1 100%;
+        background-color: yellow;
     }
     .section-flexbox {
         flex-wrap: nowrap;
         text-align: left;
-    }
-
-    .section-title {
-        padding: 10px;
-        border-bottom: 0px;
-        border-right: 2px solid var(--tertiary-color); 
     }
 
     #image1-caption{
@@ -319,7 +315,9 @@ footer h4 {
         font-size: 30px;
     }
     
-    
+    .main-content {
+        background-color: blueviolet;
+    }
     #image1-caption{
         top: 1150px;
     }
