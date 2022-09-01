@@ -136,15 +136,19 @@ section p {
    flex-direction: column;
    align-items: center;
    row-gap: 10px;
+   flex: 1 1 auto;
 }
 
 .main-image-container {
-    border: 5px solid var(--tertiary-color);
-    height: 40vh;
-    width: 60vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.image {
     position: relative;
-    text-align: center;
+    border: 5px solid var(--tertiary-color);
     flex-grow: 1;
+    align-items: stretch;
 }
 
 .main-image-container img {
@@ -165,12 +169,13 @@ section p {
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 10px;
+    column-gap: 10px;
 }
 
 .image-gallery > li {
     list-style: none;
     height: 40vh;
-    width: 60vh;
+    width: 40vh;
     flex-grow: 1;
 }
 
@@ -198,7 +203,6 @@ section p {
     top: 200px;
     background-color: var(--tertiary-color);
 }
-
 
 #contact-me h3 {
     font-size: 15px;
@@ -292,14 +296,6 @@ footer h5 {
 
     .flexbox-div {
         flex: 0 0 50rem;
-    }
-
-    .main-image-container {
-        border: 5px solid var(--tertiary-color);
-        height: 60vh;
-        width: 90vh;
-        position: relative;
-        text-align: center;
     }
  
 }
