@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>@tracybrtn's portfolio</title>
   </head>
 
   <body>
     <header>
         <div class="title-avatar">
-            <img src="assets/images/Avatar-Tracy.png" alt="Tracy Burton Bravo smiling in a portrait picture." />
             <h1>
                 <a href="/">Tracy Burton Bravo</a>
             </h1>
+            <img src="assets/images/Avatar-Tracy.png" alt="Tracy Burton Bravo smiling in a portrait picture." />
         </div>
         <nav>
             <ul>
@@ -36,86 +36,76 @@
     </header>
 
     <section class="hero">
-        <p>Junior Programmer</p>
+        <p>Software Engineer</p>
     </section>
 
-    <main class="main-content">
+    <main class="main-content" >
         <section id="about-me" class="section-flexbox">
-            <div class="section-title">
-                <h2 >About me</h2>
-            </div>
-            <div class="section-text">
-                <p>
-                    I am many things. I'm a cross-cultural kid. I'm a journalism major. I'm a product of history. I'm a result of my environment. I'm a writer. I'm a consequence. I'm the moment. I'm figuring things out. I'm learning how to code!
-                </p>
-                <p>
-                    Hi, I'm Tracy.
-                </p>
-            </div>
+            <h2 class="flexbox-title">About me</h2>
+            <div class="flexbox-div"><p>I am many things.<br> I'm a cross-cultural kid. I'm a journalism major. I'm a product of history. I'm a result of my environment. I'm a writer. I'm a consequence. I'm the moment. I'm figuring things out. I'm learning how to code!<br> Hi, I'm Tracy.
+            </p>
         </section>
 
         <section id="work" class="section-flexbox">
-            <div class="section-title">
-               <h2>Work</h2>
-            </div>
-            <div class="container">
-                <div class="gallery">
+            <h2 class="flexbox-title">Work</h2>
+            <div class="gallery">
+              <!--Main image-->
+                <div class="main-image-container">
                     <div class="main-image">
-                        <a href="https://tracybrtn.github.io/travel-with-knowledge/" target="_blank">
-                            <img src="assets/images/application-travel-with-knowledge.png" alt="Preview of the Travel with Knowledge website" />
+                        <a href="https://murmuring-dawn-13881.herokuapp.com/" target="_blank">
+                            <img src="./assets/images/application-hamburger-helper-recipe-forum.png" alt="Preview of the Hamburger Helper Recipe Forum app"/>
                         </a>
+                        <div class="image-caption">
+                            <h3>Hamburger Helper Recipe Forum</h3>
+                            <p>Full Stack app</p>
+                        </div>
                     </div>
-                    <div id="main-image-caption">
-                            <h3>Travel with Knowledge</h3>
+                </div>
+                <!--Rest of the Gallery-->
+                <ul class="image-gallery">
+                    <li class="image-caption-container">
+                        <a href="https://tracybrtn.github.io/travel-with-knowledge" target="_blank">
+                            <img src="./assets/images/application-travel-with-knowledge.png" alt="Preview of the Travel with Knowledge website" />
+                        </a>
+                        <div class="image-caption">
+                            <h4>Travel with Knowledge </h4>
                             <p>HTML + CSS + JS</p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <ul class="image-gallery">
-                        <li>
-                            <a href="https://tracybrtn.github.io/horiseon/" target="_blank">
-                                <img src="assets/images/website-2-horiseon.jpeg" alt="Preview of the Horiseon website" />
-                            </a>
-                            <div id="image1-caption">
-                                <h4>Horiseon</h4>
-                                <p>HTML + CSS</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="https://tracybrtn.github.io/run-buddy/" target="_blank">
-                                <img src="assets/images/website-1-run-buddy.png" alt="Preview of the Run Buddy website" />  
-                            </a>
-                            <div id="image2-caption">
-                                <h4>Run Buddy</h4>
-                                <p>HTML + CSS</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""> 
-                                <img src="assets/images/coming-soon-CC-image.jpg" alt="">
-                            </a>
-                            <div id="image3-caption">
-                                <h4>Coming Soon!</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""> 
-                                <img src="assets/images/coming-soon-CC-image.jpg" alt="">
-                            </a>
-                            <div id="image4-caption">
-                                <h4>Coming Soon!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li class="image-caption-container">
+                        <a href="https://github.com/tracybrtn/team-profile-generator" target="_blank">
+                            <img src="./assets/images/application-team-profile-generator.png" alt="HTML produced by the team profile generator application" />
+                        </a>
+                        <div class="image-caption">
+                            <h4>Team Profile Generator</h4>
+                            <p>Node.js</p>
+                        </div>
+                    </li>
+                    <li class="image-caption-container" >
+                        <a href="https://blooming-meadow-97026.herokuapp.com/" target="_blank"> 
+                            <img src="./assets/images/application-notetaker.png" alt="Preview of the NoteTaker app">
+                        </a>
+                        <div class="image-caption">
+                            <h4>Note Taker app</h4>
+                            <p>Express.js</p>
+                        </div>
+                    </li>
+                    <li class="image-caption-container">
+                        <a href="https://tracybrtn.github.io/run-buddy/" target="_blank"> 
+                            <img src="./assets/images/website-run-buddy.png" alt="Preview of the Run Buddy website">
+                        </a>
+                        <div class="image-caption">
+                            <h4>Run Buddy</h4>
+                            <p>HTML + CSS</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section id="contact-me" class="section-flexbox">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="section-text">
+            <h2 class="flexbox-title">Contact Me</h2>
+            <div class="section-flexbox flexbox-div">
                 <h3>
                     <a href="tel: +1916-349-5523">(916) 349-5523</a>
                 </h3>
@@ -135,10 +125,8 @@
         </section>
 
         <section id="resume" class="section-flexbox">
-            <div class="section-title">
-                <h2>Resume</h2>
-            </div>
-            <div>
+            <h2 class="flexbox-title">Resume</h2>
+            <div class="flexbox-div">
                 <p>
                     Available soon!
                     <!--<a href="/assets/downloads/TRACY BURTON BRAVO - RESUME.pdf" target="_blank">here</a>. !-->
@@ -148,7 +136,7 @@
     </main>
 
     <footer>
-        <h5>A website by Tracy Burton Bravo</h5>
+        <h5> &copy;Tracy Burton Bravo 2022</h5>
     </footer>
   </body>
 </html>
